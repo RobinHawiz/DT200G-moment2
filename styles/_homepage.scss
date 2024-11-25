@@ -58,7 +58,10 @@ section.ads {
   position: relative;
   @include flex(center, center, column);
   img {
+    width: 65rem;
+    height: 43rem;
     margin: 2rem 0;
+    object-fit: contain;
   }
 }
 
