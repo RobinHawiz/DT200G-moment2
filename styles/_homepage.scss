@@ -8,13 +8,10 @@ section.latest-products {
     width: 100%;
     @include flex(center, center, row);
     gap: 5vw;
-    .img-wrapper {
+    margin-bottom: 4rem;
+    img {
+      width: 25rem;
       height: 50rem;
-      img {
-        width: 25rem;
-        height: 100%;
-        object-fit: cover;
-      }
     }
   }
 }
@@ -64,11 +61,9 @@ section.ads {
   section.latest-products {
     .products-container {
       gap: 0;
-      .img-wrapper {
+      img {
+        width: 23rem;
         height: 45rem;
-        img {
-          width: 23rem;
-        }
       }
     }
   }
@@ -82,9 +77,11 @@ section.ads {
       margin-bottom: 0;
     }
     .products-container {
-      width: 75%;
+      gap: 5vw;
+      width: 50%;
       flex-wrap: wrap;
-      .img-wrapper {
+      img {
+        width: 15rem;
         height: 30rem;
       }
     }

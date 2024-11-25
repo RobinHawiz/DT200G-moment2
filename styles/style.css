@@ -214,15 +214,11 @@ section.latest-products .products-container {
   justify-content: center;
   flex-direction: row;
   gap: 5vw;
+  margin-bottom: 4rem;
 }
-section.latest-products .products-container .img-wrapper {
-  height: 50rem;
-}
-section.latest-products .products-container .img-wrapper img {
+section.latest-products .products-container img {
   width: 25rem;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 50rem;
 }
 
 section.course-sellout {
@@ -274,11 +270,9 @@ section.ads img {
   section.latest-products .products-container {
     gap: 0;
   }
-  section.latest-products .products-container .img-wrapper {
-    height: 45rem;
-  }
-  section.latest-products .products-container .img-wrapper img {
+  section.latest-products .products-container img {
     width: 23rem;
+    height: 45rem;
   }
 }
 @media screen and (max-width: 695px) {
@@ -286,10 +280,12 @@ section.ads img {
     margin-bottom: 0;
   }
   section.latest-products .products-container {
-    width: 75%;
+    gap: 5vw;
+    width: 50%;
     flex-wrap: wrap;
   }
-  section.latest-products .products-container .img-wrapper {
+  section.latest-products .products-container img {
+    width: 15rem;
     height: 30rem;
   }
   section.ads {

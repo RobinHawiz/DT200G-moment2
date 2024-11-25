@@ -18,7 +18,7 @@
     </noscript>
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>DT200-Moment1</title>
+    <title>DT200-Moment2</title>
   </head>
   <body>
     <div class="nav-wrapper">
@@ -55,24 +55,104 @@
     <section class="latest-products">
       <h1>Senaste produkterna</h1>
       <div class="products-container">
-        <div class="img-wrapper">
+        <picture>
+          <!-- load webp in different sizes if browser supports it -->
+          <source
+            type="image/webp"
+            media="(max-width: 695px)"
+            srcset="img/frilaggning01w150.webp"
+          />
+          <source
+            type="image/webp"
+            media="(max-width: 834px)"
+            srcset="img/frilaggning01w230.webp"
+          />
+          <source type="image/webp" srcset="img/frilaggning01w250.webp 250w" />
+          <!-- load png in different sizes if browser doesn't support webp -->
+          <source
+            type="image/png"
+            media="(max-width: 834px)"
+            srcset="img/frilaggning01w230.png"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 695px)"
+            srcset="img/frilaggning01w150.png"
+          />
+          <source type="image/png" srcset="img/frilaggning01w250.png 250w" />
+
+          <!-- if all else fails, use the original src -->
           <img
-            src="img/frilaggning01.png"
+            src="img/frilaggning01w250.png"
             alt="En bild på en flaska japansk alkoholdryck som heter Sake"
           />
-        </div>
-        <div class="img-wrapper">
+        </picture>
+
+        <picture>
+          <!-- load webp in different sizes if browser supports it -->
+          <source
+            type="image/webp"
+            media="(max-width: 695px)"
+            srcset="img/frilaggning02w150.webp"
+          />
+          <source
+            type="image/webp"
+            media="(max-width: 834px)"
+            srcset="img/frilaggning02w230.webp"
+          />
+          <source type="image/webp" srcset="img/frilaggning02w250.webp 250w" />
+          <!-- load png in different sizes if browser doesn't support webp -->
+          <source
+            type="image/png"
+            media="(max-width: 834px)"
+            srcset="img/frilaggning02w230.png"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 695px)"
+            srcset="img/frilaggning02w150.png"
+          />
+          <source type="image/png" srcset="img/frilaggning02w250.png 250w" />
+
+          <!-- if all else fails, use the original src -->
           <img
-            src="img/frilaggning02.png"
+            src="img/frilaggning02w250.png"
             alt="En bild på en flaska rött vin"
           />
-        </div>
-        <div class="img-wrapper">
+        </picture>
+
+        <picture>
+          <!-- load webp in different sizes if browser supports it -->
+          <source
+            type="image/webp"
+            media="(max-width: 695px)"
+            srcset="img/frilaggning03w150.webp"
+          />
+          <source
+            type="image/webp"
+            media="(max-width: 834px)"
+            srcset="img/frilaggning03w230.webp"
+          />
+          <source type="image/webp" srcset="img/frilaggning03w250.webp 250w" />
+          <!-- load png in different sizes if browser doesn't support webp -->
+          <source
+            type="image/png"
+            media="(max-width: 834px)"
+            srcset="img/frilaggning03w230.png"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 695px)"
+            srcset="img/frilaggning03w150.png"
+          />
+          <source type="image/png" srcset="img/frilaggning03w250.png 250w" />
+
+          <!-- if all else fails, use the original src -->
           <img
-            src="img/frilaggning03.png"
+            src="img/frilaggning03w250.png"
             alt="En bild på en vattenflaska i högkvalitativ aluminium"
           />
-        </div>
+        </picture>
       </div>
     </section>
     <section class="course-sellout">
