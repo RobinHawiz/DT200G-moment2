@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
     <link rel="icon" type="image/x-icon" href="../icon/favicon.ico" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <title>DT200-Moment1</title>
+    <title>DT200-Moment2</title>
   </head>
   <body>
     <div class="nav-wrapper">
@@ -40,7 +49,11 @@
     </div>
     <section class="hero">
       <div class="hero-img">
-        <img src="../img/header.jpg" alt="Hemsidans välkomstbild" />
+        <picture>
+          <source type="image/svg+xml" srcset="../img/header.svg" />
+          <source type="image/webp" srcset="../img/header.webp" />
+          <img src="../img/header.jpg" alt="Hemsidans välkomstbild" />
+        </picture>
       </div>
     </section>
     <section class="om-mig">
