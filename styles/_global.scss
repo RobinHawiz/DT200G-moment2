@@ -34,14 +34,6 @@ $text-shadow: 0rem 0.4rem 0.4rem
   flex-direction: $direction;
 }
 
-//Global fonts
-
-@font-face {
-  font-family: "Roboto";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700");
-  font-display: swap;
-}
-
 //Global styling
 
 * {
@@ -58,7 +50,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   background: $primary-color;
 }
 
