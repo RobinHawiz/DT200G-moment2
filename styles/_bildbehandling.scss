@@ -1,0 +1,47 @@
+section.bildbehandling {
+  min-height: 120vh;
+  text-align: center;
+  .content {
+    min-height: inherit;
+    @include flex(center, normal, column);
+    gap: 10rem;
+    margin-bottom: 10rem;
+    .info-img-container {
+      @include flex(normal, normal, column);
+      gap: 5rem;
+      .img-container {
+        @include flex(center, center, row);
+        margin: 0 2rem;
+        flex-wrap: wrap;
+        gap: 10rem;
+        .img-wrapper {
+          width: 55rem;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Styling for mobile
+
+@media screen and (max-width: 695px) {
+  section.bildbehandling {
+    .content {
+      gap: 7rem;
+      .info-img-container {
+        .img-container {
+          gap: 5rem;
+          .img-wrapper {
+            width: 31.5rem;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

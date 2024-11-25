@@ -1,0 +1,132 @@
+// Navbar styling
+
+.nav-wrapper {
+  min-height: 8vh;
+  background: $secondary-color;
+  box-shadow: $box-shadow;
+  position: relative;
+  @include flex(center, normal, column);
+  nav {
+    width: 80%;
+    margin: auto;
+    @include flex(center, space-between, row);
+    .veganburger {
+      padding: 1rem 1rem;
+      border: solid 0.1rem $default-color;
+      background: none;
+      @include flex(center, space-evenly, row);
+      .line-container {
+        height: 2rem;
+        width: 2.4rem;
+        margin-right: 1rem;
+        @include flex(normal, space-between, column);
+        .line {
+          display: block;
+          width: 100%;
+          height: 0.3rem;
+          background: $default-color;
+        }
+      }
+      p {
+        font-size: $veganburger-font;
+      }
+      display: none;
+    }
+    .nav-links {
+      width: 40rem;
+      ul {
+        @include flex(center, space-between, row);
+        li {
+          a {
+            font-size: $navlinks-font;
+            font-weight: $bold-weight;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Styling for tablets
+
+@media screen and (max-width: 834px) {
+  .nav-wrapper {
+    nav {
+      .veganburger {
+        display: flex;
+        cursor: pointer;
+      }
+      .nav-links {
+        height: 100vh;
+        width: 34rem;
+        top: 0;
+        right: 0;
+        position: fixed;
+        background: $secondary-color;
+        box-shadow: $box-shadow;
+        @include flex(normal, normal, column);
+        z-index: 1;
+        display: none;
+        .veganburger {
+          margin-top: 2rem;
+          margin-left: 2rem;
+          align-self: flex-start;
+        }
+        ul {
+          margin-top: 7rem;
+          @include flex(center, normal, column);
+          gap: 5rem;
+        }
+      }
+    }
+  }
+}
+
+// Styling for mobile
+
+@media screen and (max-width: 695px) {
+  .nav-wrapper {
+    nav {
+      .veganburger {
+        p {
+          font-size: calc($veganburger-font - 0.4rem);
+        }
+      }
+    }
+  }
+}
+
+// Navbar toggle animation
+
+.nav-wrapper {
+  nav {
+    .toggle-nav-links {
+      display: flex;
+    }
+  }
+}
+
+.nav-wrapper {
+  nav {
+    .veganburger {
+      .line-container {
+        position: relative;
+        .toggle-line:nth-of-type(1) {
+          top: 50%;
+          position: absolute;
+          transform: translateY(-50%) rotate(45deg);
+        }
+
+        .toggle-line:nth-of-type(2) {
+          width: 0;
+        }
+
+        .toggle-line:nth-of-type(3) {
+          top: 50%;
+          position: absolute;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
