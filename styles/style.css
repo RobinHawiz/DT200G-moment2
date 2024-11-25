@@ -223,14 +223,22 @@ section.latest-products .products-container img {
 
 section.course-sellout {
   min-height: 61.4vh;
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+section.course-sellout img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 section.course-sellout h1 {
   color: white;

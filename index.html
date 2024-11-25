@@ -49,7 +49,10 @@
     </div>
     <section class="hero">
       <div class="hero-img">
-        <img src="img/header.jpg" alt="Hemsidans välkomstbild" />
+        <picture>
+          <source type="image/webp" srcset="img/header.webp" />
+          <img src="img/header.jpg" alt="Hemsidans välkomstbild" />
+        </picture>
       </div>
     </section>
     <section class="latest-products">
@@ -67,7 +70,7 @@
             media="(max-width: 834px)"
             srcset="img/frilaggning01w230.webp"
           />
-          <source type="image/webp" srcset="img/frilaggning01w250.webp 250w" />
+          <source type="image/webp" srcset="img/frilaggning01w250.webp" />
           <!-- load png in different sizes if browser doesn't support webp -->
           <source
             type="image/png"
@@ -79,7 +82,7 @@
             media="(max-width: 695px)"
             srcset="img/frilaggning01w150.png"
           />
-          <source type="image/png" srcset="img/frilaggning01w250.png 250w" />
+          <source type="image/png" srcset="img/frilaggning01w250.png" />
 
           <!-- if all else fails, use the original src -->
           <img
@@ -100,7 +103,7 @@
             media="(max-width: 834px)"
             srcset="img/frilaggning02w230.webp"
           />
-          <source type="image/webp" srcset="img/frilaggning02w250.webp 250w" />
+          <source type="image/webp" srcset="img/frilaggning02w250.webp" />
           <!-- load png in different sizes if browser doesn't support webp -->
           <source
             type="image/png"
@@ -112,7 +115,7 @@
             media="(max-width: 695px)"
             srcset="img/frilaggning02w150.png"
           />
-          <source type="image/png" srcset="img/frilaggning02w250.png 250w" />
+          <source type="image/png" srcset="img/frilaggning02w250.png" />
 
           <!-- if all else fails, use the original src -->
           <img
@@ -133,7 +136,7 @@
             media="(max-width: 834px)"
             srcset="img/frilaggning03w230.webp"
           />
-          <source type="image/webp" srcset="img/frilaggning03w250.webp 250w" />
+          <source type="image/webp" srcset="img/frilaggning03w250.webp" />
           <!-- load png in different sizes if browser doesn't support webp -->
           <source
             type="image/png"
@@ -145,7 +148,7 @@
             media="(max-width: 695px)"
             srcset="img/frilaggning03w150.png"
           />
-          <source type="image/png" srcset="img/frilaggning03w250.png 250w" />
+          <source type="image/png" srcset="img/frilaggning03w250.png" />
 
           <!-- if all else fails, use the original src -->
           <img
@@ -156,6 +159,14 @@
       </div>
     </section>
     <section class="course-sellout">
+      <!-- Background image -->
+      <picture>
+        <source type="image/webp" srcset="img/background.webp" />
+        <img
+          src="img/background.jpg"
+          alt="Bakgrundsbild på vinterid i Sundsvall"
+        />
+      </picture>
       <h1>Webbutvecklings&shy;programmet<br />Mittuniversitetet</h1>
       <a
         href="https://www.miun.se/utbildning/program/webbutveckling/"
@@ -164,10 +175,13 @@
       >
     </section>
     <section class="ads">
-      <img
-        src="img/reklam_banner.gif"
-        alt="En person som utför en kullerbytta utomhus"
-      />
+      <picture>
+        <source type="image/webp" srcset="img/reklam_banner.webp" />
+        <img
+          src="img/reklam_banner.gif"
+          alt="En person som utför en kullerbytta utomhus"
+        />
+      </picture>
     </section>
     <footer>
       <p>
