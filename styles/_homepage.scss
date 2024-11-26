@@ -7,11 +7,11 @@ section.latest-products {
   .products-container {
     width: 100%;
     @include flex(center, center, row);
-    gap: 5vw;
+    gap: 10vw;
     margin-bottom: 4rem;
     img {
-      width: 25rem;
-      height: 50rem;
+      width: 17.5rem;
+      height: 35rem;
     }
   }
 }
@@ -35,7 +35,6 @@ section.course-sellout {
     line-height: 7rem;
     margin: 0;
     margin-bottom: 3.2rem;
-    text-align: center;
     text-shadow: $text-shadow;
     hyphens: manual;
   }
@@ -70,10 +69,9 @@ section.ads {
 @media screen and (max-width: 834px) {
   section.latest-products {
     .products-container {
-      gap: 0;
       img {
-        width: 23rem;
-        height: 45rem;
+        width: 15rem;
+        height: 30rem;
       }
     }
   }
@@ -91,8 +89,8 @@ section.ads {
       width: 50%;
       flex-wrap: wrap;
       img {
-        width: 15rem;
-        height: 30rem;
+        width: 12.5rem;
+        height: 25rem;
       }
     }
   }

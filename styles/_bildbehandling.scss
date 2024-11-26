@@ -1,6 +1,5 @@
 section.bildbehandling {
   min-height: 120vh;
-  text-align: center;
   .content {
     min-height: inherit;
     @include flex(center, normal, column);

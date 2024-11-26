@@ -59,7 +59,23 @@
     <section class="om-mig">
       <h1>Om mig</h1>
       <div class="content">
-        <img src="../img/portratt.png" alt="Ett Porträtt av Robin Hawiz" />
+        <picture>
+          <!-- load webp in different sizes if browser supports it -->
+          <source
+            type="image/webp"
+            media="(max-width: 695px)"
+            srcset="../img/portrattSmall.webp"
+          />
+          <source type="image/webp" srcset="../img/portratt.webp" />
+          <!-- load png in different sizes if browser doesn't support webp -->
+          <source
+            type="image/png"
+            media="(max-width: 695px)"
+            srcset="..img/portrattSmall.png"
+          />
+          <img src="../img/portratt.png" alt="Ett Porträtt av Robin Hawiz" />
+        </picture>
+
         <div class="info-container">
           <div class="info-box">
             <h2>Robin Hawiz</h2>
