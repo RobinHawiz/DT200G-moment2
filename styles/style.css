@@ -407,12 +407,9 @@ section.bildbehandling .content .info-img-container .img-container {
   flex-wrap: wrap;
   gap: 10rem;
 }
-section.bildbehandling .content .info-img-container .img-container .img-wrapper {
+section.bildbehandling .content .info-img-container .img-container img {
   width: 55rem;
   height: 36.7rem;
-}
-section.bildbehandling .content .info-img-container .img-container .img-wrapper img {
-  width: 100%;
 }
 
 @media screen and (max-width: 695px) {
@@ -422,7 +419,7 @@ section.bildbehandling .content .info-img-container .img-container .img-wrapper 
   section.bildbehandling .content .info-img-container .img-container {
     gap: 5rem;
   }
-  section.bildbehandling .content .info-img-container .img-container .img-wrapper {
+  section.bildbehandling .content .info-img-container .img-container img {
     width: 31.5rem;
     height: 21rem;
   }

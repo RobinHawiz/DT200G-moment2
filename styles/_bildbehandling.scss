@@ -13,12 +13,9 @@ section.bildbehandling {
         margin: 0 2rem;
         flex-wrap: wrap;
         gap: 10rem;
-        .img-wrapper {
+        img {
           width: 55rem;
           height: 36.7rem;
-          img {
-            width: 100%;
-          }
         }
       }
     }
@@ -34,7 +31,7 @@ section.bildbehandling {
       .info-img-container {
         .img-container {
           gap: 5rem;
-          .img-wrapper {
+          img {
             width: 31.5rem;
             height: 21rem;
           }
