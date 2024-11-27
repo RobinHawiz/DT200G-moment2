@@ -1,9 +1,9 @@
 let veganburger = document.querySelector(".veganburger");
 let veganburgerLines = document.querySelectorAll(".line");
 let menu = document.querySelector(".Menu");
-let navLinks = document.querySelector(".nav-links");
-let ulLinks = document.querySelector(".ul-links");
 let nav = document.querySelector("nav");
+let ulLinks = document.querySelector(".ul-links");
+let headerContainer = document.querySelector(".header-container");
 
 veganburger.addEventListener("click", toggleNavlinks);
 
@@ -13,20 +13,20 @@ function toggleNavlinks() {
   toggleVeganburger();
 }
 
-// Displays navlinks, places the veganburger inside navlinks and changes the veganbuger paragraph text.
+// Displays nav, places the veganburger inside nav and changes the veganbuger paragraph text
 function toggleNav() {
-  if (!navLinks.classList.contains("toggle-nav-links")) {
-    // Places the veganburger inside navlinks
-    navLinks.insertBefore(veganburger, ulLinks);
+  if (!nav.classList.contains("toggle-nav")) {
+    // Places the veganburger inside nav
+    nav.insertBefore(veganburger, ulLinks);
     // Changes the veganburger paragraph text
     menu.innerText = "Stäng meny";
   } else {
     // Places the veganburger back to the nav
-    nav.appendChild(veganburger);
+    headerContainer.appendChild(veganburger);
     menu.innerText = "Meny";
   }
-  // Toggles styling for navlinks (display: flex)
-  navLinks.classList.toggle("toggle-nav-links");
+  // Toggles styling for nav (display: flex)
+  nav.classList.toggle("toggle-nav");
 }
 
 // Toggles styling to each veganburger line

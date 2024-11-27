@@ -1,12 +1,12 @@
 // Navbar styling
 
-.nav-wrapper {
+header {
   min-height: 8vh;
   background: $secondary-color;
   box-shadow: $box-shadow;
   position: relative;
   @include flex(center, normal, column);
-  nav {
+  .header-container {
     width: 80%;
     margin: auto;
     @include flex(center, space-between, row);
@@ -40,7 +40,7 @@
       }
       display: none;
     }
-    .nav-links {
+    nav {
       width: 40rem;
       ul {
         @include flex(center, space-between, row);
@@ -58,13 +58,13 @@
 // Styling for tablets
 
 @media screen and (max-width: 834px) {
-  .nav-wrapper {
-    nav {
+  header {
+    .header-container {
       .veganburger {
         display: flex;
         cursor: pointer;
       }
-      .nav-links {
+      nav {
         height: 100vh;
         width: 34rem;
         top: 0;
@@ -93,8 +93,8 @@
 // Styling for mobile
 
 @media screen and (max-width: 695px) {
-  .nav-wrapper {
-    nav {
+  header {
+    .header-container {
       .veganburger {
         p {
           font-size: calc($veganburger-font - 0.4rem);
@@ -106,16 +106,16 @@
 
 // Navbar toggle animation
 
-.nav-wrapper {
-  nav {
-    .toggle-nav-links {
+header {
+  .header-container {
+    .toggle-nav {
       display: flex;
     }
   }
 }
 
-.nav-wrapper {
-  nav {
+header {
+  .header-container {
     .veganburger {
       .line-container {
         position: relative;

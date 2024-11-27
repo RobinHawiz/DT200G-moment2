@@ -21,8 +21,8 @@
     <title>DT200-Moment2</title>
   </head>
   <body>
-    <div class="nav-wrapper">
-      <nav>
+    <header>
+      <div class="header-container">
         <div class="logo">
           <a href="index.html"
             ><img src="img/logo.svg" alt="Hemsidans logga"
@@ -36,7 +36,7 @@
           </span>
           <span class="Menu">Meny</span>
         </button>
-        <div class="nav-links">
+        <nav>
           <ul class="ul-links">
             <li><a href="index.html">STARTSIDA</a></li>
             <li><a href="omMig/omMig.html">OM MIG</a></li>
@@ -44,152 +44,154 @@
               <a href="bildbehandling/bildbehandling.html">BILDBEHANDLING</a>
             </li>
           </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-img">
+          <picture>
+            <source type="image/svg+xml" srcset="img/header.svg" />
+            <source type="image/webp" srcset="img/header.webp" />
+            <img src="img/header.jpg" alt="Hemsidans välkomstbild" />
+          </picture>
         </div>
-      </nav>
-    </div>
-    <section class="hero">
-      <div class="hero-img">
-        <picture>
-          <source type="image/svg+xml" srcset="img/header.svg" />
-          <source type="image/webp" srcset="img/header.webp" />
-          <img src="img/header.jpg" alt="Hemsidans välkomstbild" />
-        </picture>
-      </div>
-    </section>
-    <section class="latest-products">
-      <h1>Senaste produkterna</h1>
-      <div class="products-container">
-        <picture>
-          <!-- load webp in different sizes if browser supports it -->
-          <source
-            type="image/webp"
-            media="(max-width: 695px)"
-            srcset="img/frilaggning01w125.webp"
-          />
-          <source
-            type="image/webp"
-            media="(max-width: 834px)"
-            srcset="img/frilaggning01w150.webp"
-          />
-          <source type="image/webp" srcset="img/frilaggning01w175.webp" />
-          <!-- load png in different sizes if browser doesn't support webp -->
-          <source
-            type="image/png"
-            media="(max-width: 834px)"
-            srcset="img/frilaggning01w150.png"
-          />
-          <source
-            type="image/png"
-            media="(max-width: 695px)"
-            srcset="img/frilaggning01w125.png"
-          />
-          <source type="image/png" srcset="img/frilaggning01w175.png" />
+      </section>
+      <section class="latest-products">
+        <h1>Senaste produkterna</h1>
+        <div class="products-container">
+          <picture>
+            <!-- load webp in different sizes if browser supports it -->
+            <source
+              type="image/webp"
+              media="(max-width: 695px)"
+              srcset="img/frilaggning01w125.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 834px)"
+              srcset="img/frilaggning01w150.webp"
+            />
+            <source type="image/webp" srcset="img/frilaggning01w175.webp" />
+            <!-- load png in different sizes if browser doesn't support webp -->
+            <source
+              type="image/png"
+              media="(max-width: 834px)"
+              srcset="img/frilaggning01w150.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 695px)"
+              srcset="img/frilaggning01w125.png"
+            />
+            <source type="image/png" srcset="img/frilaggning01w175.png" />
 
-          <!-- if all else fails, use the original src -->
+            <!-- if all else fails, use the original src -->
+            <img
+              src="img/frilaggning01w175.png"
+              alt="En bild på en flaska japansk alkoholdryck som heter Sake"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture>
+            <!-- load webp in different sizes if browser supports it -->
+            <source
+              type="image/webp"
+              media="(max-width: 695px)"
+              srcset="img/frilaggning02w125.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 834px)"
+              srcset="img/frilaggning02w150.webp"
+            />
+            <source type="image/webp" srcset="img/frilaggning02w175.webp" />
+            <!-- load png in different sizes if browser doesn't support webp -->
+            <source
+              type="image/png"
+              media="(max-width: 834px)"
+              srcset="img/frilaggning02w150.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 695px)"
+              srcset="img/frilaggning02w125.png"
+            />
+            <source type="image/png" srcset="img/frilaggning02w175.png" />
+
+            <!-- if all else fails, use the original src -->
+            <img
+              src="img/frilaggning02w175.png"
+              alt="En bild på en flaska rött vin"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture>
+            <!-- load webp in different sizes if browser supports it -->
+            <source
+              type="image/webp"
+              media="(max-width: 695px)"
+              srcset="img/frilaggning03w125.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 834px)"
+              srcset="img/frilaggning03w150.webp"
+            />
+            <source type="image/webp" srcset="img/frilaggning03w175.webp" />
+            <!-- load png in different sizes if browser doesn't support webp -->
+            <source
+              type="image/png"
+              media="(max-width: 834px)"
+              srcset="img/frilaggning03w150.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 695px)"
+              srcset="img/frilaggning03w125.png"
+            />
+            <source type="image/png" srcset="img/frilaggning03w175.png" />
+
+            <!-- if all else fails, use the original src -->
+            <img
+              src="img/frilaggning03w175.png"
+              alt="En bild på en vattenflaska i högkvalitativ aluminium"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="course-sellout">
+        <!-- Background image -->
+        <picture>
+          <source type="image/avif" srcset="img/background.avif" />
+          <source type="image/webp" srcset="img/background.webp" />
           <img
-            src="img/frilaggning01w175.png"
-            alt="En bild på en flaska japansk alkoholdryck som heter Sake"
+            src="img/background.jpg"
+            alt="Bakgrundsbild på vinterid i Sundsvall"
             loading="lazy"
           />
         </picture>
-
+        <h1>Webbutvecklings&shy;programmet<br />Mittuniversitetet</h1>
+        <a
+          href="https://www.miun.se/utbildning/program/webbutveckling/"
+          class="search-here"
+          >Sök här</a
+        >
+      </section>
+      <section class="ads">
         <picture>
-          <!-- load webp in different sizes if browser supports it -->
-          <source
-            type="image/webp"
-            media="(max-width: 695px)"
-            srcset="img/frilaggning02w125.webp"
-          />
-          <source
-            type="image/webp"
-            media="(max-width: 834px)"
-            srcset="img/frilaggning02w150.webp"
-          />
-          <source type="image/webp" srcset="img/frilaggning02w175.webp" />
-          <!-- load png in different sizes if browser doesn't support webp -->
-          <source
-            type="image/png"
-            media="(max-width: 834px)"
-            srcset="img/frilaggning02w150.png"
-          />
-          <source
-            type="image/png"
-            media="(max-width: 695px)"
-            srcset="img/frilaggning02w125.png"
-          />
-          <source type="image/png" srcset="img/frilaggning02w175.png" />
-
-          <!-- if all else fails, use the original src -->
+          <source type="image/webp" srcset="img/reklam_banner.webp" />
           <img
-            src="img/frilaggning02w175.png"
-            alt="En bild på en flaska rött vin"
+            src="img/reklam_banner.gif"
+            alt="En person som utför en kullerbytta utomhus"
             loading="lazy"
           />
         </picture>
-
-        <picture>
-          <!-- load webp in different sizes if browser supports it -->
-          <source
-            type="image/webp"
-            media="(max-width: 695px)"
-            srcset="img/frilaggning03w125.webp"
-          />
-          <source
-            type="image/webp"
-            media="(max-width: 834px)"
-            srcset="img/frilaggning03w150.webp"
-          />
-          <source type="image/webp" srcset="img/frilaggning03w175.webp" />
-          <!-- load png in different sizes if browser doesn't support webp -->
-          <source
-            type="image/png"
-            media="(max-width: 834px)"
-            srcset="img/frilaggning03w150.png"
-          />
-          <source
-            type="image/png"
-            media="(max-width: 695px)"
-            srcset="img/frilaggning03w125.png"
-          />
-          <source type="image/png" srcset="img/frilaggning03w175.png" />
-
-          <!-- if all else fails, use the original src -->
-          <img
-            src="img/frilaggning03w175.png"
-            alt="En bild på en vattenflaska i högkvalitativ aluminium"
-            loading="lazy"
-          />
-        </picture>
-      </div>
-    </section>
-    <section class="course-sellout">
-      <!-- Background image -->
-      <picture>
-        <source type="image/avif" srcset="img/background.avif" />
-        <source type="image/webp" srcset="img/background.webp" />
-        <img
-          src="img/background.jpg"
-          alt="Bakgrundsbild på vinterid i Sundsvall"
-          loading="lazy"
-        />
-      </picture>
-      <h1>Webbutvecklings&shy;programmet<br />Mittuniversitetet</h1>
-      <a
-        href="https://www.miun.se/utbildning/program/webbutveckling/"
-        class="search-here"
-        >Sök här</a
-      >
-    </section>
-    <section class="ads">
-      <picture>
-        <source type="image/webp" srcset="img/reklam_banner.webp" />
-        <img
-          src="img/reklam_banner.gif"
-          alt="En person som utför en kullerbytta utomhus"
-          loading="lazy"
-        />
-      </picture>
-    </section>
+      </section>
+    </main>
     <footer>
       <p>
         Laborationsuppgift för kursen DT200G, Grafisk design för webb.<br />

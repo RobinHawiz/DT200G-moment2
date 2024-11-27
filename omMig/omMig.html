@@ -21,8 +21,8 @@
     <title>DT200-Moment2</title>
   </head>
   <body>
-    <div class="nav-wrapper">
-      <nav>
+    <header>
+      <div class="header-container">
         <div class="logo">
           <a href="../index.html"
             ><img src="../img/logo.svg" alt="Hemsidans logga"
@@ -36,7 +36,7 @@
           </span>
           <span class="Menu">Meny</span>
         </button>
-        <div class="nav-links">
+        <nav>
           <ul class="ul-links">
             <li><a href="../index.html">STARTSIDA</a></li>
             <li><a href="omMig.html">OM MIG</a></li>
@@ -44,82 +44,87 @@
               <a href="../bildbehandling/bildbehandling.html">BILDBEHANDLING</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </div>
-    <section class="hero">
-      <div class="hero-img">
-        <picture>
-          <source type="image/svg+xml" srcset="../img/header.svg" />
-          <source type="image/webp" srcset="../img/header.webp" />
-          <img src="../img/header.jpg" alt="Hemsidans välkomstbild" />
-        </picture>
+        </nav>
       </div>
-    </section>
-    <section class="om-mig">
-      <h1>Om mig</h1>
-      <div class="content">
-        <picture>
-          <!-- load webp in different sizes if browser supports it -->
-          <source
-            type="image/webp"
-            media="(max-width: 695px)"
-            srcset="../img/portrattSmall.webp"
-          />
-          <source type="image/webp" srcset="../img/portratt.webp" />
-          <!-- load png in different sizes if browser doesn't support webp -->
-          <source
-            type="image/png"
-            media="(max-width: 695px)"
-            srcset="..img/portrattSmall.png"
-          />
-          <img
-            src="../img/portratt.png"
-            alt="Ett Porträtt av Robin Hawiz"
-            loading="lazy"
-          />
-        </picture>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-img">
+          <picture>
+            <source type="image/svg+xml" srcset="../img/header.svg" />
+            <source type="image/webp" srcset="../img/header.webp" />
+            <img src="../img/header.jpg" alt="Hemsidans välkomstbild" />
+          </picture>
+        </div>
+      </section>
+      <section class="om-mig">
+        <h1>Om mig</h1>
+        <div class="content">
+          <picture>
+            <!-- load webp in different sizes if browser supports it -->
+            <source
+              type="image/webp"
+              media="(max-width: 695px)"
+              srcset="../img/portrattSmall.webp"
+            />
+            <source type="image/webp" srcset="../img/portratt.webp" />
+            <!-- load png in different sizes if browser doesn't support webp -->
+            <source
+              type="image/png"
+              media="(max-width: 695px)"
+              srcset="..img/portrattSmall.png"
+            />
+            <img
+              src="../img/portratt.png"
+              alt="Ett Porträtt av Robin Hawiz"
+              loading="lazy"
+            />
+          </picture>
 
-        <div class="info-container">
-          <div class="info-box">
-            <h2>Robin Hawiz</h2>
-            <p>
-              Hej där, jag är en blivande fullstackutvecklare som ska nischa sig
-              inom .NET utveckling (studerar detta vid sidan om). Jag äter
-              oftast enbart en gång om dagen, då att äta flera gånger än en gång
-              är överskattat. Bildbehandling är rätt så nytt för mig och
-              hittills har jag lärt mig en hel del.
-            </p>
-          </div>
-          <div class="info-box">
-            <h2>Om uppgiften</h2>
-            <p>
-              Sammanfattningsvis så har vi gjort massvis med saker i moment 1 av
-              kursen, exempelvis:
-            </p>
-            <ul>
-              <li>Lärt oss om olika filformat och dess för- samt nackdelar.</li>
-              <li>Lärt oss om grafikformaten raster- samt vektorgrafik.</li>
-              <li>
-                Lärt oss hur filstorlek förändras i sammband med bildstorlek,
-                färgpixlar &#40;8 bytes, 24 bytes, 32 bytes, osv&#41; samt ppi.
-              </li>
-              <li>
-                Lärt oss att skapa svg-,ico-,gif-,jpg- och png-filer samt utföra
-                simpel redigering av bilder.
-              </li>
-              <li>M.m.</li>
-            </ul>
-            <br />
-            <p>
-              Helt ärligt så är jag inte supertaggad på denna kurs då jag enbart
-              vill koda, koda, koda. Men jag ser värdet i denna kurs och är glad
-              att den är en del av programmet.
-            </p>
+          <div class="info-container">
+            <div class="info-box">
+              <h2>Robin Hawiz</h2>
+              <p>
+                Hej där, jag är en blivande fullstackutvecklare som ska nischa
+                sig inom .NET utveckling (studerar detta vid sidan om). Jag äter
+                oftast enbart en gång om dagen, då att äta flera gånger än en
+                gång är överskattat. Bildbehandling är rätt så nytt för mig och
+                hittills har jag lärt mig en hel del.
+              </p>
+            </div>
+            <div class="info-box">
+              <h2>Om uppgiften</h2>
+              <p>
+                Sammanfattningsvis så har vi gjort massvis med saker i moment 1
+                av kursen, exempelvis:
+              </p>
+              <ul>
+                <li>
+                  Lärt oss om olika filformat och dess för- samt nackdelar.
+                </li>
+                <li>Lärt oss om grafikformaten raster- samt vektorgrafik.</li>
+                <li>
+                  Lärt oss hur filstorlek förändras i sammband med bildstorlek,
+                  färgpixlar &#40;8 bytes, 24 bytes, 32 bytes, osv&#41; samt
+                  ppi.
+                </li>
+                <li>
+                  Lärt oss att skapa svg-,ico-,gif-,jpg- och png-filer samt
+                  utföra simpel redigering av bilder.
+                </li>
+                <li>M.m.</li>
+              </ul>
+              <br />
+              <p>
+                Helt ärligt så är jag inte supertaggad på denna kurs då jag
+                enbart vill koda, koda, koda. Men jag ser värdet i denna kurs
+                och är glad att den är en del av programmet.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer>
       <p>
         Laborationsuppgift för kursen DT200G, Grafisk design för webb.<br />

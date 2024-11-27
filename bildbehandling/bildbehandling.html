@@ -21,8 +21,8 @@
     <title>DT200-Moment2</title>
   </head>
   <body>
-    <div class="nav-wrapper">
-      <nav>
+    <header>
+      <div class="header-container">
         <div class="logo">
           <a href="../index.html"
             ><img src="../img/logo.svg" alt="Hemsidans logga"
@@ -36,7 +36,7 @@
           </span>
           <span class="Menu">Meny</span>
         </button>
-        <div class="nav-links">
+        <nav>
           <ul class="ul-links">
             <li><a href="../index.html">STARTSIDA</a></li>
             <li><a href="../omMig/omMig.html">OM MIG</a></li>
@@ -44,169 +44,171 @@
               <a href="bildbehandling.html">BILDBEHANDLING</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </div>
-    <section class="hero">
-      <div class="hero-img">
-        <picture>
-          <source type="image/svg+xml" srcset="../img/header.svg" />
-          <source type="image/webp" srcset="../img/header.webp" />
-          <img src="../img/header.jpg" alt="Hemsidans välkomstbild" />
-        </picture>
+        </nav>
       </div>
-    </section>
-    <section class="bildbehandling">
-      <h1>Bildbehandling</h1>
-      <div class="content">
-        <div class="info-img-container">
-          <h2>Färgstick</h2>
-          <div class="img-container">
-            <picture>
-              <source
-                media="(max-width: 695px)"
-                srcset="
-                  ../img/fargstick_foreW315.avif 1x,
-                  ../img/fargstick_foreW315.webp 1x,
-                  ../img/fargstick_foreW315.jpg  1x,
-                  ../img/fargstick_foreW630.avif 2x,
-                  ../img/fargstick_foreW630.webp 2x,
-                  ../img/fargstick_foreW630.jpg  2x,
-                  ../img/fargstick_foreW945.avif 3x,
-                  ../img/fargstick_foreW945.webp 3x,
-                  ../img/fargstick_foreW945.jpg  3x
-                "
-              />
-              <source
-                srcset="
-                  ../img/fargstick_foreW550.avif  1x,
-                  ../img/fargstick_foreW550.webp  1x,
-                  ../img/fargstick_foreW550.jpg   1x,
-                  ../img/fargstick_foreW1100.avif 2x,
-                  ../img/fargstick_foreW1100.webp 2x,
-                  ../img/fargstick_foreW1100.jpg  2x,
-                  ../img/fargstick_foreW1650.avif 3x,
-                  ../img/fargstick_foreW1650.webp 3x,
-                  ../img/fargstick_foreW1650.jpg  3x
-                "
-              />
-              <img
-                src="../img/fargstick_foreW550.jpg"
-                alt="En bild på vintertid i Sundsvall"
-                loading="lazy"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width: 695px)"
-                srcset="
-                  ../img/fargstickW315.avif 1x,
-                  ../img/fargstickW315.webp 1x,
-                  ../img/fargstickW315.jpg  1x,
-                  ../img/fargstickW630.avif 2x,
-                  ../img/fargstickW630.webp 2x,
-                  ../img/fargstickW630.jpg  2x,
-                  ../img/fargstickW945.avif 3x,
-                  ../img/fargstickW945.webp 3x,
-                  ../img/fargstickW945.jpg  3x
-                "
-              />
-              <source
-                srcset="
-                  ../img/fargstickW550.avif  1x,
-                  ../img/fargstickW550.webp  1x,
-                  ../img/fargstickW550.jpg   1x,
-                  ../img/fargstickW1100.avif 2x,
-                  ../img/fargstickW1100.webp 2x,
-                  ../img/fargstickW1100.jpg  2x,
-                  ../img/fargstickW1650.avif 3x,
-                  ../img/fargstickW1650.webp 3x,
-                  ../img/fargstickW1650.jpg  3x
-                "
-              />
-              <img
-                src="../img/fargstickW550.jpg"
-                alt="en bild på vintertid i Sundsvall"
-                loading="lazy"
-              />
-            </picture>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-img">
+          <picture>
+            <source type="image/svg+xml" srcset="../img/header.svg" />
+            <source type="image/webp" srcset="../img/header.webp" />
+            <img src="../img/header.jpg" alt="Hemsidans välkomstbild" />
+          </picture>
+        </div>
+      </section>
+      <section class="bildbehandling">
+        <h1>Bildbehandling</h1>
+        <div class="content">
+          <div class="info-img-container">
+            <h2>Färgstick</h2>
+            <div class="img-container">
+              <picture>
+                <source
+                  media="(max-width: 695px)"
+                  srcset="
+                    ../img/fargstick_foreW315.avif 1x,
+                    ../img/fargstick_foreW315.webp 1x,
+                    ../img/fargstick_foreW315.jpg  1x,
+                    ../img/fargstick_foreW630.avif 2x,
+                    ../img/fargstick_foreW630.webp 2x,
+                    ../img/fargstick_foreW630.jpg  2x,
+                    ../img/fargstick_foreW945.avif 3x,
+                    ../img/fargstick_foreW945.webp 3x,
+                    ../img/fargstick_foreW945.jpg  3x
+                  "
+                />
+                <source
+                  srcset="
+                    ../img/fargstick_foreW550.avif  1x,
+                    ../img/fargstick_foreW550.webp  1x,
+                    ../img/fargstick_foreW550.jpg   1x,
+                    ../img/fargstick_foreW1100.avif 2x,
+                    ../img/fargstick_foreW1100.webp 2x,
+                    ../img/fargstick_foreW1100.jpg  2x,
+                    ../img/fargstick_foreW1650.avif 3x,
+                    ../img/fargstick_foreW1650.webp 3x,
+                    ../img/fargstick_foreW1650.jpg  3x
+                  "
+                />
+                <img
+                  src="../img/fargstick_foreW550.jpg"
+                  alt="En bild på vintertid i Sundsvall"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width: 695px)"
+                  srcset="
+                    ../img/fargstickW315.avif 1x,
+                    ../img/fargstickW315.webp 1x,
+                    ../img/fargstickW315.jpg  1x,
+                    ../img/fargstickW630.avif 2x,
+                    ../img/fargstickW630.webp 2x,
+                    ../img/fargstickW630.jpg  2x,
+                    ../img/fargstickW945.avif 3x,
+                    ../img/fargstickW945.webp 3x,
+                    ../img/fargstickW945.jpg  3x
+                  "
+                />
+                <source
+                  srcset="
+                    ../img/fargstickW550.avif  1x,
+                    ../img/fargstickW550.webp  1x,
+                    ../img/fargstickW550.jpg   1x,
+                    ../img/fargstickW1100.avif 2x,
+                    ../img/fargstickW1100.webp 2x,
+                    ../img/fargstickW1100.jpg  2x,
+                    ../img/fargstickW1650.avif 3x,
+                    ../img/fargstickW1650.webp 3x,
+                    ../img/fargstickW1650.jpg  3x
+                  "
+                />
+                <img
+                  src="../img/fargstickW550.jpg"
+                  alt="en bild på vintertid i Sundsvall"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="info-img-container">
+            <h2>Handkolorering och retusch</h2>
+            <div class="img-container">
+              <picture>
+                <source
+                  media="(max-width: 695px)"
+                  srcset="
+                    ../img/handkolorering_foreW315.avif 1x,
+                    ../img/handkolorering_foreW315.webp 1x,
+                    ../img/handkolorering_foreW315.jpg  1x,
+                    ../img/handkolorering_foreW630.avif 2x,
+                    ../img/handkolorering_foreW630.webp 2x,
+                    ../img/handkolorering_foreW630.jpg  2x,
+                    ../img/handkolorering_foreW945.avif 3x,
+                    ../img/handkolorering_foreW945.webp 3x,
+                    ../img/handkolorering_foreW945.jpg  3x
+                  "
+                />
+                <source
+                  srcset="
+                    ../img/handkolorering_foreW550.avif  1x,
+                    ../img/handkolorering_foreW550.webp  1x,
+                    ../img/handkolorering_foreW550.jpg   1x,
+                    ../img/handkolorering_foreW1100.avif 2x,
+                    ../img/handkolorering_foreW1100.webp 2x,
+                    ../img/handkolorering_foreW1100.jpg  2x,
+                    ../img/handkolorering_foreW1650.avif 3x,
+                    ../img/handkolorering_foreW1650.webp 3x,
+                    ../img/handkolorering_foreW1650.jpg  3x
+                  "
+                />
+                <img
+                  src="../img/handkolorering_foreW550.jpg"
+                  alt="En svartvit bild på en häst som drar i släde med tre barn"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width: 695px)"
+                  srcset="
+                    ../img/handkoloreringW315.avif 1x,
+                    ../img/handkoloreringW315.webp 1x,
+                    ../img/handkoloreringW315.jpg  1x,
+                    ../img/handkoloreringW630.avif 2x,
+                    ../img/handkoloreringW630.webp 2x,
+                    ../img/handkoloreringW630.jpg  2x,
+                    ../img/handkoloreringW945.avif 3x,
+                    ../img/handkoloreringW945.webp 3x,
+                    ../img/handkoloreringW945.jpg  3x
+                  "
+                />
+                <source
+                  srcset="
+                    ../img/handkoloreringW550.avif  1x,
+                    ../img/handkoloreringW550.webp  1x,
+                    ../img/handkoloreringW550.jpg   1x,
+                    ../img/handkoloreringW1100.avif 2x,
+                    ../img/handkoloreringW1100.webp 2x,
+                    ../img/handkoloreringW1100.jpg  2x,
+                    ../img/handkoloreringW1650.avif 3x,
+                    ../img/handkoloreringW1650.webp 3x,
+                    ../img/handkoloreringW1650.jpg  3x
+                  "
+                />
+                <img
+                  src="../img/handkoloreringW550.jpg"
+                  alt="En färgad bild på en häst som drar i släde med tre barn"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           </div>
         </div>
-        <div class="info-img-container">
-          <h2>Handkolorering och retusch</h2>
-          <div class="img-container">
-            <picture>
-              <source
-                media="(max-width: 695px)"
-                srcset="
-                  ../img/handkolorering_foreW315.avif 1x,
-                  ../img/handkolorering_foreW315.webp 1x,
-                  ../img/handkolorering_foreW315.jpg  1x,
-                  ../img/handkolorering_foreW630.avif 2x,
-                  ../img/handkolorering_foreW630.webp 2x,
-                  ../img/handkolorering_foreW630.jpg  2x,
-                  ../img/handkolorering_foreW945.avif 3x,
-                  ../img/handkolorering_foreW945.webp 3x,
-                  ../img/handkolorering_foreW945.jpg  3x
-                "
-              />
-              <source
-                srcset="
-                  ../img/handkolorering_foreW550.avif  1x,
-                  ../img/handkolorering_foreW550.webp  1x,
-                  ../img/handkolorering_foreW550.jpg   1x,
-                  ../img/handkolorering_foreW1100.avif 2x,
-                  ../img/handkolorering_foreW1100.webp 2x,
-                  ../img/handkolorering_foreW1100.jpg  2x,
-                  ../img/handkolorering_foreW1650.avif 3x,
-                  ../img/handkolorering_foreW1650.webp 3x,
-                  ../img/handkolorering_foreW1650.jpg  3x
-                "
-              />
-              <img
-                src="../img/handkolorering_foreW550.jpg"
-                alt="En svartvit bild på en häst som drar i släde med tre barn"
-                loading="lazy"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width: 695px)"
-                srcset="
-                  ../img/handkoloreringW315.avif 1x,
-                  ../img/handkoloreringW315.webp 1x,
-                  ../img/handkoloreringW315.jpg  1x,
-                  ../img/handkoloreringW630.avif 2x,
-                  ../img/handkoloreringW630.webp 2x,
-                  ../img/handkoloreringW630.jpg  2x,
-                  ../img/handkoloreringW945.avif 3x,
-                  ../img/handkoloreringW945.webp 3x,
-                  ../img/handkoloreringW945.jpg  3x
-                "
-              />
-              <source
-                srcset="
-                  ../img/handkoloreringW550.avif  1x,
-                  ../img/handkoloreringW550.webp  1x,
-                  ../img/handkoloreringW550.jpg   1x,
-                  ../img/handkoloreringW1100.avif 2x,
-                  ../img/handkoloreringW1100.webp 2x,
-                  ../img/handkoloreringW1100.jpg  2x,
-                  ../img/handkoloreringW1650.avif 3x,
-                  ../img/handkoloreringW1650.webp 3x,
-                  ../img/handkoloreringW1650.jpg  3x
-                "
-              />
-              <img
-                src="../img/handkoloreringW550.jpg"
-                alt="En färgad bild på en häst som drar i släde med tre barn"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer>
       <p>
         Laborationsuppgift för kursen DT200G, Grafisk design för webb.<br />

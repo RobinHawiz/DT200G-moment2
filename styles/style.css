@@ -80,7 +80,7 @@ footer p {
     font-size: 2.6rem;
   }
 }
-.nav-wrapper {
+header {
   min-height: 8vh;
   background: #bbc7a4;
   box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
@@ -90,7 +90,7 @@ footer p {
   justify-content: normal;
   flex-direction: column;
 }
-.nav-wrapper nav {
+header .header-container {
   width: 80%;
   margin: auto;
   display: flex;
@@ -98,15 +98,15 @@ footer p {
   justify-content: space-between;
   flex-direction: row;
 }
-.nav-wrapper nav .logo {
+header .header-container .logo {
   width: 17.5rem;
   height: 7rem;
 }
-.nav-wrapper nav .logo img {
+header .header-container .logo img {
   width: 100%;
   height: 100%;
 }
-.nav-wrapper nav .veganburger {
+header .header-container .veganburger {
   padding: 1rem 1rem;
   border: solid 0.1rem black;
   background: none;
@@ -116,7 +116,7 @@ footer p {
   flex-direction: row;
   display: none;
 }
-.nav-wrapper nav .veganburger .line-container {
+header .header-container .veganburger .line-container {
   height: 2rem;
   width: 2.4rem;
   margin-right: 1rem;
@@ -125,35 +125,35 @@ footer p {
   justify-content: space-between;
   flex-direction: column;
 }
-.nav-wrapper nav .veganburger .line-container .line {
+header .header-container .veganburger .line-container .line {
   display: block;
   width: 100%;
   height: 0.3rem;
   background: black;
 }
-.nav-wrapper nav .veganburger p {
+header .header-container .veganburger p {
   font-size: 2.6rem;
 }
-.nav-wrapper nav .nav-links {
+header .header-container nav {
   width: 40rem;
 }
-.nav-wrapper nav .nav-links ul {
+header .header-container nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
 }
-.nav-wrapper nav .nav-links ul li a {
+header .header-container nav ul li a {
   font-size: 2rem;
   font-weight: 700;
 }
 
 @media screen and (max-width: 834px) {
-  .nav-wrapper nav .veganburger {
+  header .header-container .veganburger {
     display: flex;
     cursor: pointer;
   }
-  .nav-wrapper nav .nav-links {
+  header .header-container nav {
     height: 100vh;
     width: 34rem;
     top: 0;
@@ -168,12 +168,12 @@ footer p {
     z-index: 1;
     display: none;
   }
-  .nav-wrapper nav .nav-links .veganburger {
+  header .header-container nav .veganburger {
     margin-top: 2rem;
     margin-left: 2rem;
     align-self: flex-start;
   }
-  .nav-wrapper nav .nav-links ul {
+  header .header-container nav ul {
     margin-top: 7rem;
     display: flex;
     align-items: center;
@@ -183,26 +183,26 @@ footer p {
   }
 }
 @media screen and (max-width: 695px) {
-  .nav-wrapper nav .veganburger p {
+  header .header-container .veganburger p {
     font-size: 2.2rem;
   }
 }
-.nav-wrapper nav .toggle-nav-links {
+header .header-container .toggle-nav {
   display: flex;
 }
 
-.nav-wrapper nav .veganburger .line-container {
+header .header-container .veganburger .line-container {
   position: relative;
 }
-.nav-wrapper nav .veganburger .line-container .toggle-line:nth-of-type(1) {
+header .header-container .veganburger .line-container .toggle-line:nth-of-type(1) {
   top: 50%;
   position: absolute;
   transform: translateY(-50%) rotate(45deg);
 }
-.nav-wrapper nav .veganburger .line-container .toggle-line:nth-of-type(2) {
+header .header-container .veganburger .line-container .toggle-line:nth-of-type(2) {
   width: 0;
 }
-.nav-wrapper nav .veganburger .line-container .toggle-line:nth-of-type(3) {
+header .header-container .veganburger .line-container .toggle-line:nth-of-type(3) {
   top: 50%;
   position: absolute;
   transform: translateY(-50%) rotate(-45deg);
