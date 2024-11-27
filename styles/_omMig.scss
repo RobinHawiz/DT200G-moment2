@@ -3,7 +3,7 @@ section.om-mig {
   width: 80%;
   margin: 0 auto 0 auto;
   @include flex(center, normal, column);
-  .content {
+  .om-mig-container {
     width: 100%;
     height: 100%;
     @include flex(normal, space-between, row);
@@ -12,7 +12,7 @@ section.om-mig {
       width: 45rem;
       height: 45rem;
     }
-    .info-container {
+    article.om-mig {
       width: 62rem;
       @include flex(center, normal, column);
       gap: 10rem;
@@ -20,7 +20,7 @@ section.om-mig {
       h2 {
         margin-bottom: 2.5rem;
       }
-      .info-box {
+      section.info-box {
         ul {
           li {
             margin-top: 1rem;
@@ -38,7 +38,7 @@ section.om-mig {
 
 @media screen and (max-width: 834px) {
   section.om-mig {
-    .content {
+    .om-mig-container {
       flex-wrap: wrap;
       gap: 8rem;
       justify-content: center;
@@ -53,14 +53,14 @@ section.om-mig {
 
 @media screen and (max-width: 695px) {
   section.om-mig {
-    .content {
+    .om-mig-container {
       flex-wrap: wrap;
       gap: 8rem;
       img {
         width: 25rem;
         height: 25rem;
       }
-      .info-container {
+      article.om-mig {
         gap: 5rem;
       }
     }
