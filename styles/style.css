@@ -39,10 +39,10 @@ span {
   font-size: 1.8rem;
 }
 
-section.hero .hero-img {
+.hero .hero-img {
   height: 46rem;
 }
-section.hero .hero-img img {
+.hero .hero-img img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -271,7 +271,7 @@ section.course-sellout a.search-here:hover {
   background: #bbc7a4;
 }
 
-section.ads {
+.ads {
   min-height: 72.2vh;
   position: relative;
   display: flex;
@@ -279,7 +279,7 @@ section.ads {
   justify-content: center;
   flex-direction: column;
 }
-section.ads img {
+.ads img {
   width: 65rem;
   height: 43rem;
   margin: 2rem 0;
@@ -306,12 +306,12 @@ section.ads img {
     width: 12.5rem;
     height: 25rem;
   }
-  section.ads {
+  .ads {
     min-height: 72.2vh;
     position: relative;
     margin: 0 2rem;
   }
-  section.ads img {
+  .ads img {
     width: 100%;
   }
 }

@@ -52,7 +52,7 @@ section.course-sellout {
   }
 }
 
-section.ads {
+.ads {
   min-height: 72.2vh;
   position: relative;
   @include flex(center, center, column);
@@ -95,7 +95,7 @@ section.ads {
     }
   }
 
-  section.ads {
+  .ads {
     min-height: 72.2vh;
     position: relative;
     margin: 0 2rem;
