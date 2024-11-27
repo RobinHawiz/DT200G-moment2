@@ -382,7 +382,7 @@ section.om-mig .om-mig-container article.om-mig section.info-box ul li {
 section.bildbehandling {
   min-height: 120vh;
 }
-section.bildbehandling .content {
+section.bildbehandling .bildbehandling-container {
   min-height: inherit;
   display: flex;
   align-items: center;
@@ -391,14 +391,16 @@ section.bildbehandling .content {
   gap: 10rem;
   margin-bottom: 10rem;
 }
-section.bildbehandling .content .info-img-container {
+section.bildbehandling .bildbehandling-container section.fargstick,
+section.bildbehandling .bildbehandling-container section.handkolorering {
   display: flex;
   align-items: normal;
   justify-content: normal;
   flex-direction: column;
   gap: 5rem;
 }
-section.bildbehandling .content .info-img-container .img-container {
+section.bildbehandling .bildbehandling-container section.fargstick .img-wrapper,
+section.bildbehandling .bildbehandling-container section.handkolorering .img-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,19 +409,22 @@ section.bildbehandling .content .info-img-container .img-container {
   flex-wrap: wrap;
   gap: 10rem;
 }
-section.bildbehandling .content .info-img-container .img-container img {
+section.bildbehandling .bildbehandling-container section.fargstick .img-wrapper img,
+section.bildbehandling .bildbehandling-container section.handkolorering .img-wrapper img {
   width: 55rem;
   height: 36.7rem;
 }
 
 @media screen and (max-width: 695px) {
-  section.bildbehandling .content {
+  section.bildbehandling .bildbehandling-container {
     gap: 7rem;
   }
-  section.bildbehandling .content .info-img-container .img-container {
+  section.bildbehandling .bildbehandling-container section.fargstick .img-wrapper,
+  section.bildbehandling .bildbehandling-container section.handkolorering .img-wrapper {
     gap: 5rem;
   }
-  section.bildbehandling .content .info-img-container .img-container img {
+  section.bildbehandling .bildbehandling-container section.fargstick .img-wrapper img,
+  section.bildbehandling .bildbehandling-container section.handkolorering .img-wrapper img {
     width: 31.5rem;
     height: 21rem;
   }

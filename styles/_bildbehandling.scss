@@ -1,14 +1,15 @@
 section.bildbehandling {
   min-height: 120vh;
-  .content {
+  .bildbehandling-container {
     min-height: inherit;
     @include flex(center, normal, column);
     gap: 10rem;
     margin-bottom: 10rem;
-    .info-img-container {
+    section.fargstick,
+    section.handkolorering {
       @include flex(normal, normal, column);
       gap: 5rem;
-      .img-container {
+      .img-wrapper {
         @include flex(center, center, row);
         margin: 0 2rem;
         flex-wrap: wrap;
@@ -26,10 +27,11 @@ section.bildbehandling {
 
 @media screen and (max-width: 695px) {
   section.bildbehandling {
-    .content {
+    .bildbehandling-container {
       gap: 7rem;
-      .info-img-container {
-        .img-container {
+      section.fargstick,
+      section.handkolorering {
+        .img-wrapper {
           gap: 5rem;
           img {
             width: 31.5rem;
